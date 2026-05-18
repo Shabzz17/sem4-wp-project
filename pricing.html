@@ -7,74 +7,29 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .plans {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-      gap: 1.25rem;
-      padding: 2.5rem 5% 4rem;
-      max-width: 960px;
-      margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+      gap: 1.25rem; padding: 2.5rem 5% 4rem; max-width: 960px; margin: 0 auto;
     }
-
     .plan {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2.25rem;
-      display: flex;
-      flex-direction: column;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2.25rem; display: flex; flex-direction: column;
     }
-
     .plan.featured { border-color: var(--accent); background: var(--text); color: var(--white); }
-
-    .plan-name {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      margin-bottom: 1.25rem;
-    }
-
+    .plan-name { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 1.25rem; }
     .plan.featured .plan-name { color: rgba(255,255,255,0.45); }
-
-    .price {
-      font-family: 'Syne', sans-serif;
-      font-size: 3rem;
-      font-weight: 800;
-      letter-spacing: -0.05em;
-      line-height: 1;
-    }
-
+    .price { font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1; }
     .price sup { font-size: 1.2rem; vertical-align: top; margin-top: 0.5rem; }
     .price-note { font-size: 0.82rem; color: var(--muted); margin: 0.3rem 0 1.75rem; }
     .plan.featured .price-note { color: rgba(255,255,255,0.45); }
-
     .feat-list { list-style: none; flex: 1; margin-bottom: 2rem; }
-
-    .feat-list li {
-      padding: 0.55rem 0;
-      font-size: 0.88rem;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      gap: 0.65rem;
-      align-items: center;
-    }
-
+    .feat-list li { padding: 0.55rem 0; font-size: 0.88rem; border-bottom: 1px solid var(--border); display: flex; gap: 0.65rem; align-items: center; }
     .plan.featured .feat-list li { border-color: rgba(255,255,255,0.1); }
     .feat-list li::before { content: '✓'; color: var(--accent); font-weight: 800; flex-shrink: 0; }
     .plan.featured .feat-list li::before { color: #7070FF; }
-
     .plan .btn { width: 100%; justify-content: center; }
     .plan.featured .btn-primary { background: var(--white); color: var(--text); }
     .plan.featured .btn-primary:hover { background: var(--bg); }
-
-    .guarantee {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-      padding-bottom: 5rem;
-    }
-
+    .guarantee { text-align: center; color: var(--muted); font-size: 0.85rem; padding-bottom: 5rem; }
     .guarantee span { color: var(--text); font-weight: 600; }
   </style>
 </head>
@@ -89,13 +44,13 @@
     <a href="#" class="btn btn-primary">Get started →</a>
   </nav>
 
-  <div class="page-header fade-up">
+  <div class="page-header">
     <h1>Simple, honest pricing</h1>
     <p class="sub">No hidden fees. No surprises. Cancel any time. Start free and scale as your team grows.</p>
   </div>
 
   <div class="plans">
-    <div class="plan fade-up">
+    <div class="plan">
       <div class="plan-name">Starter</div>
       <div class="price"><sup>$</sup>0</div>
       <div class="price-note">Free forever</div>
@@ -108,7 +63,7 @@
       <a href="#" class="btn btn-outline">Get started free</a>
     </div>
 
-    <div class="plan featured fade-up">
+    <div class="plan featured">
       <div class="plan-name">Pro · Most popular</div>
       <div class="price"><sup>$</sup>29</div>
       <div class="price-note">per seat / month, billed annually</div>
@@ -123,9 +78,9 @@
       <a href="#" class="btn btn-primary">Start 14-day free trial</a>
     </div>
 
-    <div class="plan fade-up">
+    <div class="plan">
       <div class="plan-name">Enterprise</div>
-      <div class="price" style="font-size:2rem;line-height:1.2;padding-top:.4rem">Custom</div>
+      <div class="price" style="font-size:2rem;line-height:1.3;padding-top:.4rem">Custom</div>
       <div class="price-note">Volume pricing available</div>
       <ul class="feat-list">
         <li>Everything in Pro</li>
@@ -138,14 +93,12 @@
     </div>
   </div>
 
-  <p class="guarantee fade-up"><span>30-day money-back guarantee</span> on all paid plans. No questions asked.</p>
+  <p class="guarantee"><span>30-day money-back guarantee</span> on all paid plans. No questions asked.</p>
 
   <footer>
     <div class="logo">flu<span>x</span></div>
     <div>© 2025 Flux Inc. All rights reserved.</div>
     <div style="display:flex;gap:1.5rem"><a href="#">Privacy</a><a href="#">Terms</a></div>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
