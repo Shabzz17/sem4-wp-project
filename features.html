@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flux — Features</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.25rem;
+      padding: 2.5rem 5% 6rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      transition: border-color 0.25s, transform 0.25s;
+      cursor: default;
+    }
+
+    .card:hover { border-color: var(--accent); transform: translateY(-4px); }
+
+    .card-icon {
+      width: 46px; height: 46px;
+      background: #EBEBFF;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p { color: var(--muted); font-size: 0.9rem; line-height: 1.75; }
+
+    .cta-strip {
+      background: var(--text);
+      color: var(--white);
+      border-radius: 18px;
+      margin: 0 5% 5rem;
+      max-width: 1100px;
+      padding: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .cta-strip h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .cta-strip p { color: rgba(255,255,255,0.55); font-size: 0.9rem; margin-top: 0.4rem; }
+
+    .btn-white { background: var(--white); color: var(--text); }
+    .btn-white:hover { background: var(--bg); }
+
+    @media(max-width: 700px) { .cta-strip { margin: 0 5% 4rem; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">flu<span>x</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html" class="active">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <a href="#" class="btn btn-primary">Get started →</a>
+  </nav>
+
+  <div class="page-header fade-up">
+    <h1>Everything your team needs</h1>
+    <p class="sub">Powerful tools designed to eliminate friction and help your team do their best work — without the complexity.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card fade-up">
+      <div class="card-icon">⚡</div>
+      <h3>Smart Automation</h3>
+      <p>Build powerful workflows with our no-code editor. Automate repetitive tasks so you can focus on what actually matters.</p>
+    </div>
+    <div class="card fade-up">
+      <div class="card-icon">👥</div>
+      <h3>Team Collaboration</h3>
+      <p>Real-time editing, comments, and mentions keep your whole team in sync — no matter where they are in the world.</p>
+    </div>
+    <div class="card fade-up">
+      <div class="card-icon">📊</div>
+      <h3>Analytics Dashboard</h3>
+      <p>Visualize performance with live data, custom reports, and trend analysis built right into your workspace.</p>
+    </div>
+    <div class="card fade-up">
+      <div class="card-icon">🔗</div>
+      <h3>100+ Integrations</h3>
+      <p>Connect Flux to your favourite tools — Slack, GitHub, Notion, Figma, Linear, Jira, and many more.</p>
+    </div>
+    <div class="card fade-up">
+      <div class="card-icon">🔒</div>
+      <h3>Enterprise Security</h3>
+      <p>SOC 2 Type II certified. SSO, SCIM provisioning, full audit logs, and flexible data residency options.</p>
+    </div>
+    <div class="card fade-up">
+      <div class="card-icon">🚀</div>
+      <h3>One-Click Deploy</h3>
+      <p>Ship to production with confidence — automated testing, staging environments, and instant rollbacks included.</p>
+    </div>
+  </div>
+
+  <div class="cta-strip fade-up" style="margin:0 auto 5rem;max-width:calc(1100px - 0px)">
+    <div>
+      <h2>Ready to get started?</h2>
+      <p>Join 12,000+ teams already using Flux to move faster.</p>
+    </div>
+    <a href="pricing.html" class="btn btn-white">See pricing →</a>
+  </div>
+
+  <footer>
+    <div class="logo">flu<span>x</span></div>
+    <div>© 2025 Flux Inc. All rights reserved.</div>
+    <div style="display:flex;gap:1.5rem"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
